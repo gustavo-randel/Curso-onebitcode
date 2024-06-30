@@ -1,0 +1,23 @@
+/*Seletor :nth-child() - seleção de filho específico, valor inserido dentro do parentesis representa posição do filho em ordem que aparece no código*/
+li:nth-child(2){
+    color: rgba(201, 24, 24, 0.664);
+}
+
+/*o n tem a propriedade de multiplicação, então a cada 2, ou, a cada número par um terá a propriedade definida, entretanto, para par e impar vc pode utilizar os nomes odd e even*/
+li:nth-child(2n){
+    color: #00f;
+}
+
+
+/*Também temos o que chamamos de pseudo-elementos. Cada elemento no HTML pode possuir dois elementos extras associados a ele, um antes e outro depois. Podemos referenciar esses pseudo-elementos através dos seletores ::before e ::after:*/
+li::before {
+  content: "(antes) ";
+}
+
+li::after {
+  content: " (depois)";
+}
+/*:not(), que permite “negar”, ou inverter, um determinado seletor. Nesse exemplo o usamos para estilizar os filhos que não são o primeiro:*/
+
+/*Semelhante ao nth-child, temos o first-child e last-child para primeiros e últimos filhos de um tipo de elemento, respectivamente:*/
+
