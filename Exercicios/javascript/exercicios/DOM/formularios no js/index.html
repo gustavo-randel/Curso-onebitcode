@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="forms.js" defer></script>
+    <style>
+        body{
+            background-image: url(51fd4e073a5c230f82bf528d466f6b2c_XL.jpg);
+            background-repeat: none;
+            background-size: cover;
+        }
+        div{
+            height: 500px;
+            width: 500px;
+            padding: 10px;
+            padding-bottom: 20px;
+            background-color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Montar pedido</h1>
+            <form id="order-forms">
+                <label for="name">Nome: </label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br><br>
+                <label for="adress">Endereço: </label>
+                <br>
+                <input type="text" name="adress" id="adress">
+                <br><br>
+                <label for="breadType">Tipo de pão: </label>
+                <br>
+                <select name="breadType" id="breadType">
+                    <option selected disabled>Selecione uma opção...</option>
+                    <option value="3 queijos">3 queijos</option>
+                    <option value="Parmesão e oregano">Parmesão e oregano</option>
+                    <option value="9 grãos">9 grãos</option>
+                    <option value="Italiano branco">Italiano branco</option>
+                    <option value="Granola salgada">Granola salgada</option>
+                    <option value="Manteiga temperada">Manteiga temperada</option>
+                </select>
+                <br><br>
+                <label for="main">Princpal: </label>
+                <br>
+                <input type="radio" name="main" id="main1">
+                <label for="main1">Carne</label>
+                <input type="radio" name="main" id="main2">
+                <label for="main2">Frango</label>
+                <input type="radio" name="main" id="main3">
+                <label for="main3">Vegano</label>
+                <br><br>
+                <label for="salad">Salada: </label>
+                <!-- Alface, Tomate, Azeitonas, Cenoura, Picles -->
+                <br>
+                <input type="checkbox" name="salad" id="salad1">
+                <label for="salad1">Alface</label>
+                <input type="checkbox" name="salad" id="salad2">
+                <label for="salad2">Tomate</label>
+                <input type="checkbox" name="salad" id="salad3">
+                <label for="salad3">Azeitonas</label>
+                <input type="checkbox" name="salad" id="salad4">
+                <label for="salad4">Cenoura</label>
+                <input type="checkbox" name="salad" id="salad5">
+                <label for="salad5">Picles</label>
+                <br><br>
+                <label for="observations">Observações: </label>
+                <br>
+                <textarea name="observations" id="observations" cols="30" rows="6"></textarea>
+                <br><br>
+                <button type="submit">Fechar pedido</button>
+            </form>
+    </div>
+</body>
+</html>
