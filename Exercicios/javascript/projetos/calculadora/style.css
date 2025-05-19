@@ -22,7 +22,7 @@ main {
 display: block;
 margin: 0 auto;
 max-width: 40rem;
-padding: 0 1.5rem 2.5rem;
+padding: 0 2.5rem 3.5rem;
 position: relative;
 }
 
@@ -44,7 +44,7 @@ color: var(--bg-color);
 button {
 background-color: var(--primary-color);
 border: none;
-border-radius: .25rem;
+border-radius: .3rem;
 font-weight: 700;
 padding: .5rem 1rem;
 transition: .15s;
@@ -66,7 +66,7 @@ width: 100%;
 #keys {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-gap: 1rem;
+gap: .9rem;
 margin: 2rem 0;
 }
 
